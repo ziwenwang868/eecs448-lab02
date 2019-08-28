@@ -23,7 +23,15 @@ LinkedList<T>::~LinkedList()
 template <typename T>
 bool LinkedList<T>::isEmpty() const
 {
-	return(m_size == 0);
+    if(m_size==0)
+    {
+        return(true);
+    }
+    else
+    {
+        return(false);
+    }
+	
 }
 
 template <typename T>
